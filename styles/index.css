@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "Anicon Sans";
+    src: url('../fonts/AniconSans-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* #hovernav:hover{
+    background-color: #333;
+    color: #fff;
+} */
+.container {
+    margin: auto;
+    background-color: yellow;
+    height: 100%;
+    width: 100%;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Anicon Sans';
+    color: #333;
+    font-size: 70px;
+    padding: 20px;
+}
+
+.header {
+    background-color: gold;
+    width: auto;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    flex: 1;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+#links {
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+
+}
+
+
+
+.categorias {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.categorias p {
+    font-size: 20px;
+    color: #333;
+}
+
+.categorias p:hover {
+    cursor: pointer;
+}
+
+.categorias ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.categorias ul li p {
+    margin: 0;
+}
+
+.categorias ul li,
+a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    border-radius: 12px;
+}
+
+.categorias ul li a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.categorias ul ul {
+    background-color: gold;
+    display: none;
+    position: absolute;
+    width: 170px;
+    border: 1px solid;
+}
+
+
+.categorias ul li:hover>ul {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.search-input {
+    font-size: 17px;
+    padding: 5px;
+    height: 41px;
+    width: 600px;
+    border: none;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+
+.search-button {
+    width: 80px;
+    height: 51px;
+    background-color: #007bff;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.cartimg {
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+}
+
+.perfilimg {
+    width: 30px;
+    height: 30px;
+}
+
+.perfil {
+    display: flex;
+    width: 250px;
+    gap: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.logoimg {
+    border-radius: 100%;
+}
+
+.bienvenida {
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    background-color: #007bff;
+    text-align: center;
+    padding: 30px;
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.48);
+}
+
+.bienvenidatexto {
+    font-family: 'Anicon Sans';
+    font-size: 40px;
+}
+
+.publicacioneslista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.publicaciones h1 {
+    font-size: 30px;
+}
+
+.publicacion {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    background-color: #007bff;
+    border-radius: 14px;
+}
+.publicacion:hover{
+    cursor: pointer;
+}
+.detalleproducto {
+    display: grid;
+    gap: 5px;
+    padding-bottom: 20px;
+}
+.detalleproducto .productonombre{
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.publicacion img {
+    width: 300px;
+    margin-top: 10px;
+    height: 200px;
+}
