@@ -12,7 +12,7 @@
 
 </style>
 
-<body>
+<body class="dark-theme">
     <div class="container">
         <div class="titulopagina">
             <img src="./img/bicicleta.png" alt="">
@@ -28,10 +28,11 @@
             <nav class="navbar">
                 <ul class="listanavbar">
                     <li id="hovernav"> <a id="links" href="#">Inicio</a></li>
-                    <li id="hovernav"> <a id="links" href="">Publicar</a></li>
+                    <li id="hovernav"> <a id="links" href="publicar.html">Publicar</a></li>
                     <li>
                         <div class="search-container">
-                            <input type="text" class="search-input" name="q" placeholder="🔎 Buscar..." autocomplete="off">
+                            <input type="text" class="search-input" name="q" placeholder="🔎 Buscar..."
+                                autocomplete="off">
                             <button type="submit" class="search-button">Buscar</button>
                         </div>
                     </li>
@@ -57,8 +58,12 @@
                         <div class="perfil">
                             <img class="cartimg" src="./img/cart.png"></img>
                             <img class="perfilimg" src="./img/perfil.png" alt="">
-                            <p>Gustavo Padilla Ruiz</p>
+                            <a href="login.html" id="sesion">Iniciar Sesión</a>
+                            <p id="userName" style="display: none;"></p>
                         </div>
+                    </li>
+                    <li>
+                        <button class="btn">Light</button>
                     </li>
                 </ul>
             </nav>
@@ -74,7 +79,7 @@
         <div class="publicaciones">
             <h1>Elige aqui lo que deseas alquilar ⬇</h1>
             <div class="publicacioneslista">
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/bicicleta1.png" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Bicicleta raulxav 2022</p>
@@ -83,7 +88,7 @@
                     </div>
 
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/lugarevento.jpg" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Lugar para quinceañero</p>
@@ -91,7 +96,7 @@
                         <p>(1 unidad)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/carro1.jpeg" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Carro kia</p>
@@ -99,7 +104,7 @@
                         <p>(2 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/bicicleta2.png" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Bicicleta smart 950 </p>
@@ -107,7 +112,7 @@
                         <p>(3 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/motocross.png" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Moto cross</p>
@@ -115,7 +120,7 @@
                         <p>(10 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/ropanovia.png" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Vestido para mujer</p>
@@ -123,7 +128,7 @@
                         <p>(8 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/trajenovio.jpg" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Traje de hombre</p>
@@ -131,15 +136,15 @@
                         <p>(14 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/carro2.png" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Carro chevrolet</p>
-                        <p>$1.2/mes</p>
+                        <p>$1.2M/mes</p>
                         <p>(2 unidades)</p>
                     </div>
                 </div>
-                <div class="publicacion">
+                <div class="publicacion" id="pu">
                     <img src="productosimg/silla.jpg" alt="">
                     <div class="detalleproducto">
                         <p class="productonombre">Sillas para eventos</p>
@@ -152,20 +157,20 @@
         </div>
 
         <div class="footer">
-           
+
             <div class="contacto">
                 <h1>Contáctanos</h1>
-                    <div id="contactodato">
-                        <img src="./img/email.png" alt="">
-                        <p>soporte@alquifree.com</p>
-                    </div>
-                    <div id="contactodato">
-                        <img src="./img/telefono.png" alt="">
-                        <p> +57 3337778866</p>
-                    </div>
+                <div id="contactodato">
+                    <img src="./img/email.png" alt="">
+                    <p>soporte@alquifree.com</p>
                 </div>
+                <div id="contactodato">
+                    <img src="./img/telefono.png" alt="">
+                    <p> +57 3337778866</p>
+                </div>
+            </div>
 
-          
+
             <div class="redes">
                 <h1>Siguenos en nuestras redes</h1>
                 <div class="red">
@@ -174,16 +179,41 @@
                     <img src="./img/instagram.png" alt="">
                     <img src="./img/youtube.png" alt="">
                 </div>
-               
+
             </div>
 
         </div>
-<div class="autor">
-    <p>&copy; Gustavo Adolfo Padilla Ruiz</p>
-</div>
+        <div class="autor">
+            <p>&copy; Gustavo Adolfo Padilla Ruiz</p>
+        </div>
     </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const username = params.get('username');
+        const user = document.getElementById('userName');
+        const session = document.getElementById('sesion');
+        if (username) {
+            user.textContent = `Hello, ${username}!`;
+            user.style.display = 'block';
+            session.style.display = 'none';
+        }
+        const pub = document.getElementById('pu');
+        pub.addEventListener('click', function () {
+          
+                // Obtener los datos del producto
+                const nombreProducto = document.querySelector('.productonombre').textContent;
+                const precio = document.querySelectorAll('.detalleproducto p')[1].textContent;
+                const unidades = document.querySelectorAll('.detalleproducto p')[2].textContent;
 
+                // Codificar los datos del producto para pasarlos como parámetros
+                const datosCodificados = `?nombre=${encodeURIComponent(nombreProducto)}&precio=${encodeURIComponent(precio)}&unidades=${encodeURIComponent(unidades)}`;
 
+                // Redireccionar a la página de información del producto con los datos como parámetros
+                window.location.href = `producto.html${datosCodificados}`;
+    
+        });
+    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
